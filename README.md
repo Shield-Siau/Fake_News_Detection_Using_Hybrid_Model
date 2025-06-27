@@ -1,2 +1,4 @@
 # Fake_News_Detection_Using_Hybrid_Model
-Using Temporal Convolution Newtork instead of CNN, + Attention model + Bi-LSTM
+Using Temporal Convolution Newtork instead of CNN, + Attention model + Bi-LSTM. 
+
+  After basic preprocessing steps like stemming, remove stop words, and tokenization is performed, and GloVe (Global Vectors for Word Representation) is used for text embedding. After the embedding stage, the text is passed as input for TCN (Temporal Convolution Networks) layer to take out the spatial characteristics. Bi-LSTM is then used to retrieve the contextual characteristics and passed to attention layer, which form the precise structure of relationship of both spatial and contextual characteristics. At the final stage of dense output layer, all information is consolidated for the model to determinte whether the news is fake or real. The presented model is assesed with ISOT fake news dataset. The evaluation of proposed model produces better outcomes (97.6%) than baseline and most of the state-of-art models.
